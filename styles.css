@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: rgb(248,248,248);
+    background: linear-gradient(0deg, rgba(200,200,200,1) 0%, rgba(237,237,237,1) 90%, rgba(248,248,248,1) 100%); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer{
+    margin-top: auto;
+    padding: 1.5em;
+
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+h2 {
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4E4E4E;
+    transition: color;
+    transition-duration: 0.2s;
+}
+
+a:hover {
+    color:#FFFFFF;
+}
+
+#app {
+    width: 60%;
+    max-width: 1000px;
+    margin: auto;
+    min-height: 100vh;
+    /* display: flex;
+    justify-content: center; */
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #4E4E4E;
+}
+
+#navBar {
+    width: 100%;
+    padding: 1.5em;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.sm-gap {
+    gap: 10px;
+}
+
+#toggle-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle-theme {
+    width: 25px;
+    height: 25px;
+    background-color: gold;
+    border-radius: 50%;
+    transition-property: background-color, width, height;
+    transition-duration: 0.2s;
+}
+
+#toggle-theme:hover {
+    background-color: rgb(55, 93, 132);
+    width: 30px;
+    height: 30px;
+}
+
+#bodyWrapper{
+    padding: 3em;
+    width: 80%;
+    height: 600px;
+}
+
+#clock {
+    min-width: 300px;
+    min-height: 300px;
+    width: 80%;
+    max-width: 600px;
+    aspect-ratio: 1/1;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: #cacaca 3px solid;
+}
+
+#time {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+#location {
+    color: #4E4E4E;
+    caret-color: #4E4E4E;
+    border: 0 solid black;
+    border-bottom: 2px solid #ffffff;
+    padding: 0.2em;
+    margin: 0.2em;
+    font-size: 1.5rem;
+    text-align: center;
+    background: none;
+    max-width: 80%;
+    border-radius: 7px;
+    transition: border-bottom;
+    transition-duration: 0.2s;
+}
+
+#location:hover {
+    border-bottom: 2px solid #cacaca;
+}
+
+#location::placeholder {
+    color: #4E4E4E;
+}
+
+#location:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+    #location {
+        font-size: 2.5rem;
+    } 
+    #time {
+        font-size: 6rem;
+    }
+}
+
+/* comentario para git */
