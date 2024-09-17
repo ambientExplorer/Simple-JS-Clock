@@ -13,4 +13,11 @@ const time = document.querySelector("#time");
 setClock();
 setInterval(setClock, 1000);
 
-//comentario para git
+const toggleThemeButton = document.querySelector("button");
+const clock = document.querySelector(".clock");
+
+toggleThemeButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode-body");
+    toggleThemeButton.classList.toggle("dark-mode");
+    clock.classList.toggle("dark-mode");
+  })
