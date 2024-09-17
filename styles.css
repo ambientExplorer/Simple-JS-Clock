@@ -60,7 +60,7 @@ button {
     transition-duration: 0.2s;
 }
 
-button:hover {
+button:active {
     box-shadow: 
     inset 0px 3px 5px 0px rgba(0,0,0,0.8),
     inset 0px -3px 5px 0px rgba(0,0,0,0.8)
@@ -169,6 +169,8 @@ input:focus {
     background-color: light-dark(var(--light-bg), var(--dark-bg));
     border-radius: 50%;
     border: light-dark(var(--light-code), var(--dark-color)) 3px solid;
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
 }
 
 #time {
